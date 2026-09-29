@@ -1,7 +1,7 @@
-GET http://localhost:3001/api/notes/100
+GET http://localhost:3001/api/notes/6ab41b63025ef0cfa36db83c
 
 ### 
-DELETE http://localhost:3001/api/notes/1
+DELETE http://localhost:3001/api/notes/6ab
 
 ###
 GET http://localhost:3001/api/notes
@@ -12,5 +12,14 @@ Content-Type: application/json
 
 {
     "content": "VS code restclient is a pretty handy tool",
+    "important": true
+}
+
+###
+PUT http://localhost:3001/api/notes/6aba764c17f9a72cb96ab4c3
+Content-Type: application/json
+
+{
+    "content": "VS code restclient is a pretty handy tool. Ain't it",
     "important": true
 }
